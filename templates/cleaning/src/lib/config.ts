@@ -2,109 +2,61 @@ import type { SiteConfig } from "@core/web/types"
 
 export const config: SiteConfig = {
   business: {
-  city: "Tracy",
-  theme: "ocean",
-  niche: "cleaning",
-  name: "Sparkle Clean Co.",
-  tagline: "Spotless Home. Zero Stress.",
-  phone: "(555) 789-0123",
-  phoneHref: "tel:+15557890123",
-  email: "hello@sparkleclean.com",
-  address: "Tracy, California",
-  serviceAreas: ["Tracy", "Stockton", "Manteca", "Lathrop", "Mountain House", "Ripon"],
-  license: "CA Business #789012",
-  since: "2012",
-  google_rating: "4.9",
-  review_count: "523",
-  emergency: false,
-  social: { google: "https://google.com", yelp: "https://yelp.com", facebook: "https://facebook.com" },
-},
+    name: "Heavenly Scent Pros",
+    tagline: "Sparkling Clean. Every Single Time.",
+    phone: "(480) 807-4306",
+    phoneHref: "tel:+14808074306",
+    email: "info@heavenlyscentpros.com",
+    address: "123 Main St",
+    city: "Mesa",
+    serviceAreas: ["Mesa", "Chandler", "Gilbert", "Tempe", "Scottsdale", "Phoenix"],
+    license: "Licensed & Insured",
+    since: "2010",
+    google_rating: "4.9",
+    review_count: "200",
+    emergency: false,
+    theme: "noir",
+    niche: "cleaning",
+  },
 
   services: [
-  { icon: "sparkles", title: "Deep Cleaning", desc: "One-time top-to-bottom clean. Perfect for move-in/out, post-construction, or a seasonal fresh start. We leave no corner untouched.", urgent: false },
-  { icon: "calendar", title: "Weekly / Bi-Weekly", desc: "Recurring cleaning on your schedule. Same trusted cleaner every visit. Cancel anytime, no contracts.", urgent: false },
-  { icon: "truck", title: "Move In / Move Out", desc: "Professional clean for your old place or new home. Deposit-back guaranteed or we re-clean free.", urgent: false },
-  { icon: "building", title: "Commercial Cleaning", desc: "Offices, retail spaces, medical facilities. Nightly, weekly, or custom schedule. Bonded and insured.", urgent: false },
-  { icon: "home", title: "Post-Construction", desc: "Dust, debris, paint overspray — we handle it all. Move-in ready within 24 hours of construction.", urgent: false },
-  { icon: "key", title: "Airbnb Turnover", desc: "Between-guest cleaning that earns 5-star reviews. Quick turnaround. Fresh linens. Restock supplies.", urgent: false },
-],
+    { icon: "home", title: "House Cleaning", desc: "Experience a spotless home with our comprehensive house cleaning services.", urgent: false },
+    { icon: "sparkles", title: "Window Cleaning", desc: "Enjoy crystal-clear views with our streak-free interior and exterior window cleaning.", urgent: false },
+    { icon: "scissors", title: "Carpet Cleaning", desc: "Revitalize your carpets, removing deep-seated dirt and allergens for a fresh look.", urgent: false },
+    { icon: "hammer", title: "Tile & Grout Cleaning", desc: "Restore the shine to your tile and grout, eliminating grime and discoloration.", urgent: false },
+    { icon: "heart", title: "Rug Cleaning", desc: "Delicate or durable, we expertly clean all types of rugs, preserving their beauty.", urgent: false },
+    { icon: "briefcase", title: "Upholstery Cleaning", desc: "Refresh your furniture with our professional upholstery cleaning, extending its life and look.", urgent: false }
+  ],
 
   testimonials: [
-  { name: "Michelle B.", location: "Tracy, CA", stars: 5, text: "My house has never been this clean. The team arrived on time, worked methodically, and even cleaned spots I didn't ask for. Subscribing immediately." },
-  { name: "David S.", location: "Stockton, CA", stars: 5, text: "Used them for move-out cleaning. Landlord returned the full deposit with a compliment about the condition. Worth every dollar." },
-  { name: "Airbnb Host A.", location: "Manteca, CA", stars: 5, text: "They turn my unit over in 2 hours no matter the condition. Guests consistently give 5 stars for cleanliness. Best business decision I made." },
-],
+    { name: "Sarah L.", location: "Mesa, AZ", stars: 5, text: "Heavenly Scent Pros did an incredible job with our house cleaning last week. They were punctual, thorough, and left our home smelling amazing. The team paid attention to every detail, especially in the kitchen and bathrooms. Worth every penny for the peace of mind!" },
+    { name: "Mark T.", location: "Chandler, AZ", stars: 5, text: "I hired them for carpet and window cleaning, and I'm genuinely impressed. My carpets look brand new, and the windows are sparkling. The two technicians were professional and efficient, completing the job in under 3 hours. Highly recommend their services!" },
+    { name: "Jessica R.", location: "Gilbert, AZ", stars: 5, text: "After a big family gathering, our tile and grout needed serious help. Heavenly Scent Pros transformed our floors! They removed years of built-up grime, and the difference is astounding. The price was fair, and the service was exceptional from start to finish." }
+  ],
 
   trustBadges: [
-  "Background-Checked Staff", "Fully Insured", "Eco-Friendly Products",
-  "Satisfaction Guarantee", "No Contracts", "5-Star Average"
-],
+    "Licensed & Insured", "New Customer Special", "Arizona's Best Cleaning", "5-Star Rated", "Eco-Friendly Products", "Satisfaction Guaranteed"
+  ],
 
   stats: [
-  {
-    "value": 4.9,
-    "label": "Google Rating",
-    "suffix": "★",
-    "decimals": 1
-  },
-  {
-    "value": 2615,
-    "label": "Jobs Done",
-    "suffix": "+",
-    "decimals": 0
-  },
-  {
-    "value": 14,
-    "label": "Yrs Experience",
-    "suffix": "+",
-    "decimals": 0
-  }
-],
+    { value: 4.9, label: "Google Rating", suffix: "★", decimals: 1 },
+    { value: 1000, label: "Homes Cleaned", suffix: "+", decimals: 0 },
+    { value: 14, label: "Yrs Experience", suffix: "+", decimals: 0 }
+  ],
 
   reasons: [
-  {
-    "icon": "clock",
-    "title": "Fast Response",
-    "desc": "Same-day service when you need it. We don't keep customers waiting."
-  },
-  {
-    "icon": "dollar-sign",
-    "title": "Upfront Pricing",
-    "desc": "Quote before work starts. The number we say is the number you pay."
-  },
-  {
-    "icon": "award",
-    "title": "Certified Professionals",
-    "desc": "Licensed, insured, and trained. Real expertise on every job."
-  },
-  {
-    "icon": "thumbs-up",
-    "title": "Satisfaction Guarantee",
-    "desc": "100% happy or we come back and make it right. No questions asked."
-  },
-  {
-    "icon": "phone",
-    "title": "AI Reception 24/7",
-    "desc": "AI books cleanings, handles reschedules, and collects post-service reviews via call, text, or WhatsApp. Always on, never misses a lead."
-  },
-  {
-    "icon": "truck",
-    "title": "Fully Equipped",
-    "desc": "Trucks stocked with everything needed. First-visit completion rate above 90%."
-  }
-],
+    { icon: "clock", title: "Flexible Scheduling", desc: "We work around your busy schedule to provide convenient cleaning times." },
+    { icon: "dollar-sign", title: "Transparent Pricing", desc: "No hidden fees, just clear, upfront costs for all our services." },
+    { icon: "award", title: "Expert Cleaners", desc: "Our team is highly trained, certified, and passionate about pristine results." },
+    { icon: "thumbs-up", title: "Satisfaction Guarantee", desc: "We're not happy until you're absolutely delighted with our cleaning." },
+    { icon: "shield-check", title: "Safe & Secure", desc: "Fully insured and bonded for your peace of mind and protection." },
+    { icon: "sparkles", title: "Eco-Friendly Products", desc: "We use effective, non-toxic cleaning solutions safe for your family and pets." }
+  ],
 
-  formServiceOptions: [
-  "Deep Cleaning",
-  "Weekly / Bi-Weekly",
-  "Move In / Move Out",
-  "Commercial Cleaning",
-  "Post-Construction",
-  "Airbnb Turnover"
-],
+  formServiceOptions: ["House Cleaning", "Window Cleaning", "Carpet Cleaning", "Tile & Grout Cleaning", "Rug Cleaning", "Upholstery Cleaning"]
 }
 
-// Backward compat re-exports
+// Backward-compat re-exports
 export const BUSINESS = config.business
 export const SERVICES = config.services!
 export const TESTIMONIALS = config.testimonials!
